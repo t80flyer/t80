@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date and Time Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+    }
+
+    input[type="datetime-local"] {
+      width: 250px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    #downloadButton {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Date and Time Calculator</h1>
+  <label for="datetime">Enter a Date and Time:</label>
+  <input type="datetime-local" id="datetime">
+  <button onclick="calculate()">Calculate</button>
+  <div id="result"></div>
+  <button id="downloadButton" onclick="downloadICS()">Download ICS</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
