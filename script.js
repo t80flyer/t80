@@ -9,7 +9,7 @@ function calculate() {
     calculatedDateTime = datetime;
 
     var resultElement = document.getElementById("result");
-    resultElement.innerText = "Calculated Date and Time: " + datetime.toLocaleString();
+    resultElement.innerText = "Your T-80 period opens " + datetime.toLocaleString();
 
     var downloadButton = document.getElementById("downloadButton");
     downloadButton.style.display = "inline-block";
